@@ -15,6 +15,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   .cake-card {
+    cursor: pointer;
     background-color: #cf94ff33;
     border-radius: 5px;
     margin: 20px;
@@ -30,7 +31,7 @@
     }
     .cake-image {
       height: 200px;
-    width: 230px;
+      width: 230px;
       img {
         object-fit: cover;
         height: 100%;
@@ -97,6 +98,14 @@
   .cake-info {
     flex: 1 1;
     border-left: solid 1px white;
+    .cake-title {
+      text-decoration: underline;
+      font-size: 30px;
+    }
+    .comments {
+      font-size: 18px;
+      font-style: italic;
+    }
   }
 }
 
@@ -106,10 +115,20 @@
   font-weight: 600;
 }
 
-.CakeAdded{
+.CakeAdded {
   text-align: center;
-    padding: 50px;
-    font-size: 25px;
-    color: #303f9f;
-    text-decoration: underline;
+  padding: 50px;
+  font-size: 25px;
+  color: #303f9f;
+  text-decoration: underline;
+}
+
+.back {
+  position: absolute;
+  top: 10px;
+  border: solid 1px blue;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
 }

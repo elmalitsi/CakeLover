@@ -46,11 +46,15 @@ class CakeDetails extends Component {
         this.setState({ error: true });
       });
   }
+  GoBack=()=>{
+    this.props.history.goBack();
+  }
 
   render() {
     return (
       <section className="cakesContainer">
         <div className="cakeView-title">{this.state.cake.name}</div>
+        <div className="back" onClick={this.GoBack}>Back</div>
         <div className="cakeWrapper">
           <div className="cake-card-horisontal">
             <div className="cake-image">
@@ -61,9 +65,6 @@ class CakeDetails extends Component {
             </div>
             <div className="cake-info">
               <div className="cake-title">{this.state.cake.name}</div>
-              <IconButton aria-label="settings">
-                <FavoriteIcon />
-              </IconButton>
               <Rating
                 name="simple-controlled"
                 value={this.state.cake.yumFactor}
