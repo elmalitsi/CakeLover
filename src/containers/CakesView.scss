@@ -1,0 +1,115 @@
+.App {
+  max-width: 1140px;
+  margin: 50px auto;
+}
+.cakesContainer {
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  color: #0c0c5c;
+  position: relative;
+}
+
+.cakeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .cake-card {
+    background-color: #cf94ff33;
+    border-radius: 5px;
+    margin: 20px;
+    .cake-info {
+      display: flex;
+      align-items: center;
+      place-content: space-between;
+      padding: 10px;
+      .cake-title {
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+    .cake-image {
+      height: 200px;
+    width: 230px;
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.modal-wrapper {
+  min-width: 500px;
+  min-height: 300px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  .modal-title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .add-wrapper {
+    padding: 20px 0px;
+  }
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    min-height: 150px;
+    justify-content: space-between;
+  }
+  .btn {
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px blue;
+    margin: auto;
+    cursor: pointer;
+  }
+}
+
+//cakedetailspage
+.cake-card-horisontal {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  margin: 50px auto;
+  background-color: #cccccc26;
+  border-radius: 5px;
+  align-items: center;
+  .cake-image {
+    width: 300px;
+    height: 250px;
+    flex: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .cake-info {
+    flex: 1 1;
+    border-left: solid 1px white;
+  }
+}
+
+.errorMessages {
+  padding: 10px;
+  color: red;
+  font-weight: 600;
+}
+
+.CakeAdded{
+  text-align: center;
+    padding: 50px;
+    font-size: 25px;
+    color: #303f9f;
+    text-decoration: underline;
+}
