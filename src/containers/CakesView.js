@@ -9,6 +9,7 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { makeStyles } from '@material-ui/core/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 const useStyles = makeStyles(theme => ({
@@ -29,7 +30,8 @@ class Cakes extends Component {
   state = {
     cakes: [],
     error: false,
-    ModalIsOpen: false
+    ModalIsOpen: false,
+    cakesLoaded : false
   };
 
   componentDidMount() {
